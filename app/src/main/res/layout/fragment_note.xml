@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_date_and_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#FDF8E9"
+        android:gravity="center"
+        android:text="13 2020, 4:39 PM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_note_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FDF8E9"
+        android:gravity="top"
+        android:textColor="#2a0000"
+        android:paddingStart="?attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?attr/listPreferredItemPaddingStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_and_time"
+        tools:text="Kotlin is an Android-compatible language that is concise, expressive, and designed to be type- and null-safe. It works with the Java language seamlessly, so it makes it easy for developers who love the Java language to keep using it but also incrementally add Kotlin code and leverage Kotlin libraries. Also, many Android developers have already found that Kotlin makes development faster and more fun, so we want to better support these Kotlin users. Kotlin is an Android-compatible language that is concise, expressive, and designed to be type- and null-safe. It works with the Java language seamlessly, so it makes it easy for developers who love the Java language to keep using it but also incrementally add Kotlin code and leverage Kotlin libraries. Also, many Android developers have already found that Kotlin makes development faster and more fun, so we want to better support these Kotlin users.Kotlin is an Android-compatible language that is concise, expressive, and designed to be type- and null-safe. It works with the Java language seamlessly, so it makes it easy for developers who love the Java language to keep using it but also incrementally add Kotlin code and leverage Kotlin libraries. Also, many Android developers have already found that Kotlin makes development faster and more fun, so we want to better support these Kotlin users." />
+
+    <View
+        android:id="@+id/v_bottom_toolbar_folders"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#FCF1D3"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_new_note_note_fragment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:src="@drawable/ic_new_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_toolbar_folders" />
+
+    <ImageView
+        android:id="@+id/iv_delete_note"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:src="@drawable/ic_delete_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_toolbar_folders" />
+
+    <ImageView
+        android:id="@+id/iv_save_note"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:src="@drawable/ic_save_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_delete_note"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_toolbar_folders" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

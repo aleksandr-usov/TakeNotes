@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sort_by_created"
+        android:icon="@drawable/ic_delete_note"
+        android:title="Date Created"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_by_last_modified"
+        android:icon="@drawable/ic_delete_note"
+        android:title="Last Modified"
+        app:showAsAction="never" />
+
+</menu>
